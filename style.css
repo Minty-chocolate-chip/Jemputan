@@ -38,24 +38,13 @@ body::before {
   position: fixed;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(8, 29, 9, 0.20), rgba(244, 248, 233, 0.74) 58%, rgba(246, 250, 232, 0.92)),
+    linear-gradient(180deg, rgba(5, 23, 6, 0.2)),
     url('assets/forest-meadow.jpg');
   background-size: cover;
   background-position: center;
   z-index: -2;
 }
 
-body::after {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background:
-    radial-gradient(circle at 50% 16%, rgba(255, 252, 202, 0.35), transparent 34%),
-    radial-gradient(circle at 18% 66%, rgba(255, 255, 255, 0.30), transparent 22%),
-    repeating-linear-gradient(110deg, rgba(255, 255, 255, 0.035) 0 2px, transparent 2px 20px);
-  z-index: -1;
-  pointer-events: none;
-}
 
 .section {
   min-height: 100vh;
@@ -185,7 +174,7 @@ h1 {
 }
 
 h2 {
-  color: var(--green-deep);
+  color: var(--daisy);
   font-size: clamp(2.1rem, 5vw, 4rem);
   line-height: 1.1;
   margin-bottom: 24px;
@@ -197,7 +186,7 @@ h3 {
 }
 
 .poem {
-  color: rgba(255, 254, 243, 0.92);
+  color: rgba(244, 255, 243, 0.92);
   margin: 26px auto;
   max-width: 620px;
   text-shadow: 0 3px 14px rgba(0, 0, 0, 0.32);
@@ -205,7 +194,7 @@ h3 {
 
 .names {
   font-size: clamp(1.7rem, 4vw, 3rem);
-  color: var(--daisy);
+  color: rgba(244, 255, 243, 0.94);
   margin-top: 20px;
   text-shadow: 0 4px 18px rgba(0, 0, 0, 0.38);
 }
@@ -458,3 +447,4 @@ footer .small {
     letter-spacing: 6px;
   }
 }
+
